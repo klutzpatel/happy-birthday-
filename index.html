@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        /* This sets the black background and centers everything */
+        body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Prevents scrolling */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Styling for the text */
+        .birthday-text {
+            color: #ffffff;
+            font-size: 5rem;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 2px;
+            animation: fadeIn 3s ease-in-out, shimmer 2s infinite alternate;
+        }
+
+        /* Subtle fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Gentle glow effect */
+        @keyframes shimmer {
+            from { text-shadow: 0 0 10px rgba(255,255,255,0.2); }
+            to { text-shadow: 0 0 20px rgba(255,255,255,0.6), 0 0 30px rgba(255,255,255,0.4); }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            .birthday-text {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="birthday-text">
+        Happy Birthday
+    </div>
+
+</body>
+</html>
